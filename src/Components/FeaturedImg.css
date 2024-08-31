@@ -1,0 +1,55 @@
+
+.featuredImg{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    margin:2%;
+}
+.featuredImg img {
+    margin-top: 5.5%;
+    width: 100%;
+    object-fit: contain;
+    flex: 1; /* Take all available space */
+    margin-right: 20px; /* Add some spacing between the image and text */
+  }
+  
+  .featuredImg div {
+    flex: 2; /* Adjust the value based on your preference */
+  }
+@media(max-width:767px){
+    .featuredImg{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .featuredImg img{
+        margin-top: 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+.f_para{
+    text-align: justify;
+    font-size: 1.5rem;
+    color: #000;
+}
+@media(max-width:767px){
+    .f_para{
+        font-size: 0.75rem;
+        margin-right: 7%;
+        
+    }
+}
+.horizontalLine {
+    display: inline-block;
+    width: 68px;
+    height: 4px;/* Adjust the height of the line as needed */
+    background-color: var(--color-primary); /* Use your desired color */
+    margin-right: 10px; /* Adjust the margin as needed */
+    vertical-align: middle;
+  }
+  @media(max-width:500px){
+.allText{
+    font-size: 1rem;
+}
+  }

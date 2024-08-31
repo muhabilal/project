@@ -1,0 +1,126 @@
+
+.card {
+    width: 100%;
+    height: 300px;
+    /* Fixed height */
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0%;
+    border: none;
+
+    /* Remove border */
+}
+#card-ser{
+    padding: 60px;
+}
+.card-body {
+    color: black;
+    position: relative;
+    z-index: 2;
+    /* Ensure text is above the overlay */
+    transition: color 0.3s ease-in-out;
+}
+
+.card-hover:hover .card-body {
+    color: white;
+}
+
+.card-hover:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-img {
+    border-radius: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the card */
+    z-index: 0;
+    /* Ensure image is below text and overlay */
+}
+
+.card-link {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent */
+}
+/* .card-title{
+    color: white;
+} */
+
+@media screen and (max-width: 1220px){
+    .card{
+        width: 100%;
+        height: 230px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .card-body{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .card .card-hover{
+        padding: 0px;
+    }
+    #card-ser{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .card{
+        width: 100%;
+        height: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .card-body{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .card .card-hover{
+        padding: 0px;
+    }
+    #card-ser{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .card{
+        width: 100%;
+        height: max-content;
+        padding: 0px;
+        margin: 0px;
+    }
+    .card-body{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .card .card-hover{
+        padding: 0px;
+    }
+    #card-ser{
+        padding: 40px;
+    }
+}

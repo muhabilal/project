@@ -1,0 +1,130 @@
+
+.about-main{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px;
+    /* background-color: red; */
+}
+.about-text-main{
+    display: grid;
+}
+.about-text-main h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+    /* border-bottom: 5px solid #007aff; */
+    width: fit-content;
+    
+
+}
+.bar{
+    border: 3px solid #007aff;
+    width: 60px;
+    height: 0px;
+}
+.about-text-main p{
+    text-align: left;
+    margin-top: 20px;
+}
+.about-text-main h3{
+    text-align: left;
+    font-size: 24px;
+}
+.list-style{
+    margin-top: 20px;
+    text-align: left;
+}
+.custome-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.custome-list li{
+    position: relative;
+  padding-left: 0.5em;
+    list-style: url('../Images/check-icon.svg');
+}
+.abt-img{
+    /* background-color: red; */
+}
+.mob-screen{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .custom-col {
+        /* flex: 0 0 55%; 
+        max-width: 55%; */
+        /* background-color: green; */
+      }
+      .abt-img{
+        width: 100%;
+        height: 100%;
+      }
+}
+@media  screen and (max-width: 992px) {
+    .custom-col{
+        max-width: 50%;
+    }
+    .abt-img{
+        width: 100%;
+        height: 100%;
+    }
+    .row-main{
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    .container-abt{
+        /* background-color: blue; */
+        max-width: 100%;
+        height: 100%;
+        padding: 0px;
+        /* margin: 0px; */
+    }
+    .about-main{
+        padding: 80px 50px;
+    }
+}
+@media screen and (max-width: 900px){
+    .container-abt{
+        display: none;
+    }
+    .mob-screen{
+        display: initial;
+    }
+    .custom-col{
+        max-width: 100%;
+    }
+    .container-abt-mob{
+        display: grid;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container-abt{
+        display: none;
+    }
+    .mob-screen{
+        display: initial;
+    }
+    .container-abt-mob{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 430px){
+    .container-abt{
+        display: none;
+    }
+    .mob-screen{
+        display: initial;
+    }
+    .container-abt-mob{
+        max-width: 100%;
+        padding: 0px;
+    }
+    .about-main{
+        padding: 30px 30px;
+    }
+}

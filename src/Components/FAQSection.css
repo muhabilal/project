@@ -1,0 +1,100 @@
+ .section-bg{
+background: #f1f8ff;
+height: 100%;
+padding: 100px 0px;
+
+}
+.section-title h1{
+    text-align: center;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    margin: 30 0 20px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #333;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.1;
+}
+/* .custom-accordion {
+    max-width: 900px;  
+    margin: 0 auto;
+}
+
+.custom-accordion .panel-group {
+    margin-bottom: 0;
+} */
+.faq-sec .accordion-list {
+    padding: 0 100px;
+}
+
+.faq-sec .panel {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-sec .panel-heading {
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+
+.faq-sec .panel-title a {
+    font-size: 18px;
+    color: #343a40;
+    display: block;
+    position: relative;
+    padding-right: 40px;
+}
+
+.faq-sec .panel-title a:hover {
+    color: #010115;
+    text-decoration: none;
+}
+
+.faq-sec .panel-title a span {
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.faq-sec .panel-title a i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.faq-sec .panel-body {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #848484;
+}
+
+@media (max-width: 992px) {
+
+    .faq-sec .content,
+    .faq-sec .accordion-list {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-sec .content h3 {
+        font-size: 28px;
+    }
+
+    .faq-sec .content p {
+        font-size: 15px;
+    }
+
+    .faq-sec .panel-title a {
+        font-size: 16px;
+    }
+
+    .faq-sec .panel-body {
+        font-size: 14px;
+    }
+}

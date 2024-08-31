@@ -1,0 +1,102 @@
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    z-index: 1; /* Ensure overlay is above the image but behind the text */
+  }
+  
+  .header-text {
+    color: white; /* Adjust text color for better visibility */
+    text-align: center;
+    position: relative; /* To position the text inside the container */
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .header-container {
+        height: 500px; /* Adjust the height for large tablets */
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        height: 400px; /* Adjust the height for medium devices */
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        height: 50vh; /* Adjust the height for small tablets */
+    }
+
+    .header-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .header-text p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        height: 50vh; /* Adjust the height for mobile devices */
+    }
+    .overlay{
+        height: 30vh;
+    }
+
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container {
+        height: 200px; /* Adjust the height for very small devices */
+    }
+
+    .header-text h1 {
+        font-size: 1.25rem;
+    }
+
+    .header-text p {
+        font-size: 0.625rem;
+    }
+}

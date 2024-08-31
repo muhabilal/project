@@ -1,0 +1,21 @@
+/* WhatsAppIcon.css */
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #51fd30; /* WhatsApp green color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .wIcon{
+      font-size: 2rem;
+  }
+  .whatsapp-icon:hover {
+    background-color: #1A8EFD; /* Darker shade on hover */
+  }
+  

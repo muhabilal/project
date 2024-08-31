@@ -1,0 +1,126 @@
+
+ .portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.portfolio-card-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.portfolio-card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white; /* Set text color to blue */
+  text-align: center; /* Ensure text is centered */
+}
+
+.portfolio-card-text {
+  color: white; /* Assuming white text for description */
+  text-align: center; /* Ensure text is centered */
+}
+
+@media (max-width: 1024px) {
+  .portfolio-card-title {
+      font-size: 1.4rem;
+  }
+
+  .portfolio-card-text {
+      font-size: 0.9rem;
+  }
+
+  .portfolio-card-img {
+      height: 220px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-card-title {
+      font-size: 1.3rem;
+  }
+
+  .portfolio-card-text {
+      font-size: 0.85rem;
+  }
+
+  .portfolio-card-img {
+      height: 200px; 
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio-card-title {
+      font-size: 1.2rem;
+  }
+
+  .portfolio-card-text {
+      font-size: 0.8rem;
+  }
+
+  .portfolio-card-img-overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+  }
+
+  .portfolio-card-img {
+      height: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .portfolio-card-title {
+      font-size: 1.1rem;
+  }
+
+  .portfolio-card-text {
+      font-size: 0.75rem;
+  }
+
+  .portfolio-card-img-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 8px;
+  }
+
+  .portfolio-card-img {
+      height: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio-card-title {
+      font-size: 1rem;
+  }
+
+  .portfolio-card-text {
+      font-size: 0.7rem;
+  }
+
+  .portfolio-card-img-overlay {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 6px;
+  }
+
+  .portfolio-card-img {
+      height: 140px; 
+  }
+}

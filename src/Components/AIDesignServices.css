@@ -1,0 +1,342 @@
+.design-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service i, .fa {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.service p {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.orange {
+    top: 10%;
+    left: 5%;
+    color: orange;
+}
+
+.red {
+    top: 45%;
+    left: 0%;
+    transform: translate(0, -50%);
+    color: red;
+}
+
+.cyan {
+    bottom: 15%;
+    left: 10%;
+    color: cyan;
+}
+
+
+.blue {
+    top: 50%;
+    right: 3%;
+    transform: translate(0, -50%);
+    color: blue;
+}
+
+.green {
+    top: 15%;
+    right: 10%;
+    color: green;
+}
+
+.darkblue {
+    bottom: 15%;
+    right: 10%;
+    color: darkblue;
+}
+
+.center-circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img-text{
+    position: absolute;
+    text-align: center;
+}
+.center-circle h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.fa {
+    font-size: 24px;
+}
+
+/* Adjustments for screens up to 768px */
+@media (max-width: 768px) {
+    .design-services-container {
+        height: auto; /* Remove fixed height */
+        padding: 20px 0; /* Add padding to adjust layout */
+    }
+
+    .circle {
+        width: 100%; /* Make circle width 90% */
+        height: auto; /* Allow circle height to adjust */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .service {
+        position: relative; /* Change position to relative */
+        width: auto; /* Adjust service circle size */
+        height: auto; /* Adjust service circle size */
+        margin: 0px 0; /* Add margin for spacing */
+        border-radius: 0%;
+        
+        
+    }
+    .orange,.blue,.cyan,.darkblue,.green,.red{
+      /* background-color: red; */
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        display: initial;
+        position: relative;
+        transform: translate(0%,0%);
+    }
+
+    .center-circle {
+        position: absolute; /* Change position to relative */
+        width: 100%; /* Adjust center circle size */
+        height: 200px; /* Adjust center circle size */
+        margin: 0px auto;
+    
+    }
+
+    .center-circle h1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .fa {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .center-circle img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 700px){
+    .design-services-container {
+        height: auto; /* Remove fixed height */
+        padding: 20px 0; /* Add padding to adjust layout */
+    }
+
+    .circle {
+        width: 100%; /* Make circle width 90% */
+        height: auto; /* Allow circle height to adjust */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .service {
+        position: relative; /* Change position to relative */
+        width: auto; /* Adjust service circle size */
+        height: auto; /* Adjust service circle size */
+        margin: 0px 0; /* Add margin for spacing */
+        border-radius: 0%;
+        
+        
+    }
+    .orange,.blue,.cyan,.darkblue,.green,.red{
+      /* background-color: red; */
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        display: initial;
+        position: relative;
+        transform: translate(0%,0%);
+    }
+
+    .center-circle {
+        position: relative; /* Change position to relative */
+        width: 100%; /* Adjust center circle size */
+        height: 200px; /* Adjust center circle size */
+        margin: 0px auto;
+        left: 110%;
+    }
+
+    .center-circle h1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .fa {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .center-circle img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 577px){
+    .design-services-container {
+        height: auto; /* Remove fixed height */
+        padding: 20px 0; /* Add padding to adjust layout */
+    }
+
+    .circle {
+        width: 100%; /* Make circle width 90% */
+        height: auto; /* Allow circle height to adjust */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .service {
+        position: relative; /* Change position to relative */
+        width: auto; /* Adjust service circle size */
+        height: auto; /* Adjust service circle size */
+        margin: 0px 0; /* Add margin for spacing */
+        border-radius: 0%;
+        
+        
+    }
+    .orange,.blue,.cyan,.darkblue,.green,.red{
+      /* background-color: red; */
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        display: initial;
+        position: relative;
+        transform: translate(0%,0%);
+    }
+
+    .center-circle {
+        position: relative; /* Change position to relative */
+        width: 100%; /* Adjust center circle size */
+        height: 200px; /* Adjust center circle size */
+        margin: 0px auto;
+        left: 50%;
+    }
+
+    .center-circle h1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .fa {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .center-circle img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .design-services-container {
+        height: auto; /* Remove fixed height */
+        padding: 20px 0; /* Add padding to adjust layout */
+    }
+
+    .circle {
+        width: 100%; /* Make circle width 90% */
+        height: auto; /* Allow circle height to adjust */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .service {
+        position: relative; /* Change position to relative */
+        width: auto; /* Adjust service circle size */
+        height: auto; /* Adjust service circle size */
+        margin: 0px 0; /* Add margin for spacing */
+        border-radius: 0%;
+        
+        
+    }
+    .orange,.blue,.cyan,.darkblue,.green,.red{
+      /* background-color: red; */
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        display: initial;
+        position: relative;
+        transform: translate(0%,0%);
+    }
+
+    .center-circle {
+        position: relative; /* Change position to relative */
+        width: 100%; /* Adjust center circle size */
+        height: 200px; /* Adjust center circle size */
+        margin: 0px auto;
+        left: 0%;
+    }
+
+    .center-circle h1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .fa {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .center-circle img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }   
+}
+   
