@@ -19,7 +19,7 @@ export const contactUs = async (username, email, message) => {
     const mailOptions = {
       from:`${username}`,
       to: 'itxrobert1997@gmail.com',
-      subject: `FairServiceX: ${username} wants to contact you!`,
+      subject: `Convaite: ${username} wants to contact you!`,
       html: `Email:${email} <br> ${message}`,
     };
 

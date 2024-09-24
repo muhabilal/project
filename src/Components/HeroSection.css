@@ -47,8 +47,8 @@
     position: relative;
   }
   
-  .content1 a:hover {
-  }
+  /* .content1 a:hover {
+  } */
   
   @-webkit-keyframes animateTop {
     0% {

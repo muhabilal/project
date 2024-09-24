@@ -1,9 +1,9 @@
 import React from "react";
-import Software from "../Images/Software.webp";
-import Business from "../Images/Business.webp";
-import Trading from "../Images/trading.webp";
-import Social from "../Images/social.webp";
-import Quality from "../Images/Quality.webp";
+// import Software from "../Images/Software.webp";
+// import Business from "../Images/Business.webp";
+// import Trading from "../Images/trading.webp";
+// import Social from "../Images/social.webp";
+// import Quality from "../Images/Quality.webp";
 import UI from "../Images/UI.webp";
 import PortFolioComponent from "./PortFolioComponent";
 import './Portfolio.css'
